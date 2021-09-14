@@ -2,6 +2,8 @@ import 'package:agreement/appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
+// I've used SfPdfViewer library to view pdf
+
 class Agreement extends StatelessWidget {
   final String path;
   final String location;

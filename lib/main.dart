@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'agreement_viewer.dart';
 import 'appbar.dart';
+import 'download.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -41,7 +42,11 @@ class _MyAppState extends State<MyApp> {
               ),
               ElevatedButton(
                 // Download button logic
-                onPressed: () => null,
+                onPressed: () => {
+                  print("download clicked"),
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => DownloadFile()))
+                },
                 child: const Text('Download Agreement'),
                 style: ButtonStyle(
                   backgroundColor:
